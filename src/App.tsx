@@ -2,9 +2,12 @@
 import React from "react";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import Profile from "./components/Profile";
 import "/public/assets/css/particles.css"; 
 
 const App: React.FC = () => {
+  
+
   return (
     <>
       <Nav />
@@ -274,73 +277,8 @@ const App: React.FC = () => {
             </div>
         </section>
 
-          {/* #### SERVICES SECTION #### */}
-          <section id="about" className="bg-white dark:bg-black pt-8">
-          <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-8 lg:px-6">
-            <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-              <h2 className="mb-4 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-                About Me, HAK3R
-              </h2>
-              <p className="mb-4 text-3xl">
-              I've dedicated my career to finding the vulnerabilities that others miss. My journey began with CTF competitions and evolved into a full-time commitment to making digital spaces more secure.
-              </p>
-              <p className="text-xl">
-             My approach combines creative problem-solving with rigorous methodology, ensuring no stone is left unturned in the pursuit of robust security.
-              </p>
-              <a href="#" className="inline-flex mt-8 items-center justify-center px-5 py-4 text-base font-medium text:3xl text-center text-gray-900 border-4 border-green-300  hover:bg-green-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-green-700 dark:hover:bg-green-700 dark:focus:ring-gray-800"
-          >
-            Download C.V.
-          </a>
-            </div>
-            <div className="grid grid-cols-2 gap-4 mt-8">
-            <img
-              className="w-full transition-all duration-300 hover:saturate-150 hover:brightness-75 hover:hue-rotate-15"
-              src="./assets/images/office-long-2.png"
-              alt="office content 1"
-            />
-            <img
-              className="mt-4 w-full lg:mt-10 transition-all duration-300 hover:saturate-150 hover:brightness-75 hover:hue-rotate-15"
-              src="./assets/images/office-long-1.png"
-              alt="office content 2"
-            />
-          </div>
-          </div>
-          <div className="max-w-screen-xl px-4 pb-8 mx-auto text-center lg:pb-16 lg:px-6">
-            <figure className="max-w-screen-md mx-auto">
-              <svg
-                className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
-                viewBox="0 0 24 27"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
-                  fill="currentColor"
-                />
-              </svg>
-              <blockquote className="transform transition-all duration-300 hover:scale-125">
-              <p className="text-2xl font-medium py-8 text-gray-900 dark:text-white">
-                "Working with HAK3R transformed our security posture completely. Their methodical approach to penetration testing uncovered critical vulnerabilities that our internal team had missed for months. What sets them apart isn't just their technical expertise, but their ability to communicate complex security concepts in a way that resonates with us."
-              </p>
-            </blockquote>
-              <figcaption className="flex items-center justify-center mt-6 space-x-3">
-              <img
-                className="w-6 h-6 rounded-full transition-opacity duration-300 hover:opacity-70"
-                src="./assets/images/michael-gouch.png"
-                alt="profile picture"
-              />
-                <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                  <div className="pr-3 font-medium text-gray-900 dark:text-white">
-                    John Doe
-                  </div>
-                  <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
-                    CEO at Google
-                  </div>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-        </section>
+          {/* #### ABOUT / PROFILE SECTION #### */}
+          <Profile />
         <section id="contact" className="bg-white dark:bg-black">
           <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
             <img
@@ -361,69 +299,32 @@ const App: React.FC = () => {
           </div>
         </section>
         {/* #### CONTACT SECTION #### */}
-        <section className="bg-white dark:bg-black transition-all duration-300 hover:scale-105">
-          <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <section id="contact" className="bg-white dark:bg-black transition-all duration-300">
+          <div className="py-12 px-4 mx-auto max-w-screen-md text-center">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-            Book a consultation today – your security is my priority
+              Get in touch
             </h2>
-            <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 text-xl lg:text-2xl">
-            Protect your digital assets and maintain customer trust with proactive security testing.
+            <p className="mb-6 font-light text-center text-gray-500 dark:text-gray-400 text-xl lg:text-2xl">
+              I don't include a direct contact form on this site. Please use the links below to reach me via email or LinkedIn.
             </p>
-            <form action="#" className="space-y-8">
-            <div>
-                <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                  Your name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="shadow-sm bg-gray-50 border-4 border-green-300 text-gray-900 text-sm  focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-black dark:border-green-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                  placeholder="John Doe"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                  Your email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="shadow-sm bg-gray-50 border-4 border-green-300 text-gray-900 text-sm  focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-black dark:border-green-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                  placeholder="name@company.com"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  className="block p-3 w-full text-sm text-gray-900 bg-gray-50  border-4 border-green-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-black dark:border-green-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                  placeholder="Let us know how we can help you"
-                  required
-                />
-              </div>
-              <div className="sm:col-span-2">
-                <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
-                  Your message
-                </label>
-                <textarea
-                  id="message"
-                  rows={6}
-                  className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50  shadow-sm border-4 border-green-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-black dark:border-green-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                  placeholder="Leave a comment..."
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="py-3 px-5 text-lx font-medium text-center text-white bg-green-600 hover:bg-green-700 border-2 border-green-600 rounded-none sm:w-fit focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:border-green-600 dark:focus:ring-green-800"
+
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a
+                href="mailto:Nflocas407@gmail.com"
+                className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-green-600 hover:bg-green-700 border-2 border-green-600 rounded-sm"
               >
-                Send message
-              </button>
-            </form>
+                Email Niko
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/nikoflocas1/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-gray-900 bg-gray-100 hover:bg-gray-200 border-2 border-gray-200 rounded-sm"
+              >
+                LinkedIn
+              </a>
+            </div>
           </div>
         </section>
       </main>

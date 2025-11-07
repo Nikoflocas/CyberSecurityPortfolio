@@ -12,11 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const phrases = [
-                "Ethical Hacking Done Right",
-                "Cybersecurity Solutions That Matter",
-                "Defending Your Digital Frontier",
-                "Innovative Security Strategies",
-                "Protecting Your Digital Assets"
+                "SOC Analyst Intern",
+                "Research Assistant",
+                "SOC Lab Environments"
             ];
 
             let phraseIndex = 0;

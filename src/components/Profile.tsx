@@ -64,11 +64,11 @@ const Profile: React.FC = () => {
             <div className="mt-4">
               <h4 className="font-semibold text-gray-900 dark:text-white">Core Skills</h4>
               <ul className="mt-2 list-disc list-inside text-gray-700 dark:text-gray-300">
-                <li>Alert triage & incident response</li>
-                <li>Threat hunting & IOCs</li>
-                <li>SIEM (Splunk/Elastic/QRadar) tuning</li>
-                <li>Endpoint detection and response (EDR)</li>
-                <li>Playbook & automation (SOAR)</li>
+                <li>Security alert monitoring and investigation</li>
+                <li>Incident detection and initial triage</li>
+                <li>Log analysis and correlation using KQL</li>
+                <li>Malware analysis and threat identification</li>
+                <li>Security documentation and reporting</li>
               </ul>
             </div>
 

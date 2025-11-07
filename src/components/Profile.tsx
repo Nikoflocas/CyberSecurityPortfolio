@@ -79,7 +79,7 @@ const Profile: React.FC = () => {
 
             <div className="mt-4">
               <h4 className="font-semibold text-gray-900 dark:text-white">Certs</h4>
-              <p className="text-gray-700 dark:text-gray-300">GCIA · GCIH · Security+ · Splunk Core Certified</p>
+              <p className="text-gray-700 dark:text-gray-300">SOC Level 1 (TryHackMe) · Cisco Cyber Ops · Cisco Networking · FortiGate Operator & Administrator · Google IT Support · SC-200 (In Progress)</p>
             </div>
 
             <div className="mt-6 flex gap-3">

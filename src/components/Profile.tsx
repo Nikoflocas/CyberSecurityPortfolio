@@ -74,7 +74,7 @@ const Profile: React.FC = () => {
 
             <div className="mt-4">
               <h4 className="font-semibold text-gray-900 dark:text-white">Tools</h4>
-              <p className="text-gray-700 dark:text-gray-300">Splunk · Elastic · OSQuery · Velociraptor · Sigma · Cortex XSOAR · Velociraptor</p>
+              <p className="text-gray-700 dark:text-gray-300">SentinelOne · Velociraptor · Wireshark · Microsoft Defender · Splunk · Wazuh · Kali Linux</p>
             </div>
 
             <div className="mt-4">

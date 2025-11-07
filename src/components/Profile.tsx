@@ -15,10 +15,7 @@ const Profile: React.FC = () => {
           </p>
 
           <p className="text-xl">
-            My work spans SIEM tuning, hunting for adversary artifacts,
-            triaging alerts, and building playbooks to reduce mean-time-to
-            response. I enjoy turning noisy telemetry into actionable
-            intelligence.
+            I actively detect and analyze real-time security alerts in SOC simulation environments, distinguishing between genuine threats and false positives. Leveraging Microsoft Defender and SentinelOne alongside KQL (Kusto Query Language), I transform complex security telemetry into actionable intelligence for rapid threat response.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4">

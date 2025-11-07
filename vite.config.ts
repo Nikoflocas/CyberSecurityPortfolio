@@ -59,7 +59,7 @@ export default defineConfig({
       }
     }
   },
-  base: './',
+  base: '/CyberSecurityPortfolio/',
   publicDir: 'public',
   resolve: {
     alias: {
